@@ -8,10 +8,12 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        var myUser = User()
+        var myUser = User("James",50)
+        myUser.name = "Lars"
+        myUser.age = 60
         //bunlari baslatmazsak null donuyor
-        myUser.age = 25
-        myUser.name = "James"
+//        myUser.age = 25
+//        myUser.name = "James"
 
         println(myUser.age) //atilda yazdirmadi .toString kullandi
         println(myUser.name)
