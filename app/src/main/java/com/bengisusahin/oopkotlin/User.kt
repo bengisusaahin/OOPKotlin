@@ -1,6 +1,6 @@
 package com.bengisusahin.oopkotlin
 
-class User {
+class User : People{
 
     //property
     var name : String? = null

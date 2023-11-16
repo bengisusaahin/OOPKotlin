@@ -17,6 +17,7 @@ class MainActivity : AppCompatActivity() {
 
         println(myUser.age) //atilda yazdirmadi .toString kullandi
         println(myUser.name)
+        println(myUser.information())
 
         //encapsulation
         var james = Musician("James", "Guitar", 55)
@@ -45,5 +46,15 @@ class MainActivity : AppCompatActivity() {
         val barley = Dog()
         barley.test() //super.sing i yani animaldaki singi cagiracak
         barley.sing()
+
+        //abstract & interface
+        //abstract sizin bir obje instance oluşturamayacağınız bir sınıfır
+        //var myPeople = People()
+
+        var myPiano = Piano()
+        myPiano.brand = "Yamaha"
+        myPiano.digital = false
+        println(myPiano.roomName)
+        myPiano.info()
     }
 }
