@@ -18,11 +18,17 @@ class MainActivity : AppCompatActivity() {
         println(myUser.age) //atilda yazdirmadi .toString kullandi
         println(myUser.name)
 
+        //encapsulation
         var james = Musician("James", "Guitar", 55)
         //james.age = 60 private set yaptiktan sonra yoruma aldık
         println(james.age)
         println(james.returnBandName("Atil"))
         println(james.returnBandName("Kirk"))
 
+        //inheritance
+        var lars = SuperMusician("Lars", "Drums", 65)
+        println(lars.name)
+        println(lars.returnBandName("Atil"))
+        lars.sing()
     }
 }

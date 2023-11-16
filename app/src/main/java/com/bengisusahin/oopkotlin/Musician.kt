@@ -1,6 +1,6 @@
 package com.bengisusahin.oopkotlin
 
-class Musician(name: String, instrument: String, age: Int) {
+open class Musician(name: String, instrument: String, age: Int) {
 
     //ulasilmasin istedigim icin komple sildim
 //    var name : String? = name
