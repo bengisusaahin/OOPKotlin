@@ -17,5 +17,12 @@ class MainActivity : AppCompatActivity() {
 
         println(myUser.age) //atilda yazdirmadi .toString kullandi
         println(myUser.name)
+
+        var james = Musician("James", "Guitar", 55)
+        //james.age = 60 private set yaptiktan sonra yoruma aldık
+        println(james.age)
+        println(james.returnBandName("Atil"))
+        println(james.returnBandName("Kirk"))
+
     }
 }
