@@ -56,5 +56,23 @@ class MainActivity : AppCompatActivity() {
         myPiano.digital = false
         println(myPiano.roomName)
         myPiano.info()
+
+        //Lambda epressions bir input isenip output verilir
+        fun printString(myString : String){
+            println(myString)
+        }
+
+        printString("My test string")
+
+        val testString = {myString : String -> println(myString) }
+
+        testString("My lambda string")
+
+        val multiplyLambda = {a: Int, b: Int -> a*b}
+        println(multiplyLambda(5,4))
+
+        val multiplyLambda2 : (Int, Int) -> Int = {a,b -> a*b}
+        println(multiplyLambda2(5,5))
+
     }
 }
