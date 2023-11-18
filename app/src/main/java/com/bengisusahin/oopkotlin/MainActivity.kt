@@ -74,5 +74,23 @@ class MainActivity : AppCompatActivity() {
         val multiplyLambda2 : (Int, Int) -> Int = {a,b -> a*b}
         println(multiplyLambda2(5,5))
 
+        //asyncrnous
+        //callback func, listener func, completion func
+        //fun downloadMusicians(url: String, completion: () -> Unit){ //bos bisi bos bisi dondurcek
+        fun downloadMusicians(url: String, completion: (Musician) -> Unit){ //bos bisi bos bisi dondurcek
+           //url -> download
+            //data
+            val kirkHammet = Musician("Kirk", "Guitar",60)
+            completion(kirkHammet)
+        }
+
+//        downloadMusicians("metallica.com", {
+//            //println("completed && ready")
+//            println(it.name)
+//        })
+        downloadMusicians("metallica.com", { musician ->
+            //println("completed && ready")
+            println(musician.name)
+        })
     }
 }
